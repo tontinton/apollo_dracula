@@ -151,9 +151,9 @@
     {%- for page in pages %}
         <div class="card">
             {% if page.extra.local_image %}
-                <img class="card-image" alt={{ page.extra.local_image }} src="{{ page.extra.local_image }}" />
+                <img class="card-image" alt={{ page.extra.local_image }} src="{{ page.extra.local_image }}" loading="lazy" />
             {% elif page.extra.remote_image %}
-                <img class="card-image" alt={{ page.extra.remote_image }} src="{{ page.extra.remote_image }}" />
+                <img class="card-image" alt={{ page.extra.remote_image }} src="{{ page.extra.remote_image }}" loading="lazy" />
             {% else %}
                 <div class="card-image-placeholder"></div>
             {% endif %}

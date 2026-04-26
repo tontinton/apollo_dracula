@@ -5,7 +5,7 @@
         <div class="socials">
             {% for social in config.extra.socials %}
             <a rel="me" href="{{ social.url }}" class="social">
-                <img alt={{ social.name }} src="/social_icons/{{ social.icon }}.svg">
+                <img alt={{ social.name }} src="/social_icons/{{ social.icon }}.svg" width="24" height="24">
             </a>
             {% endfor %}
         </div>
@@ -18,8 +18,8 @@
 
         {% if config.extra.theme == "toggle" %}
         <a id="dark-mode-toggle" onclick="toggleTheme()" href="javascript:void(0)" style="margin-left: 0.7em">
-            <img src="/feather/sun.svg" id="sun-icon" style="filter: invert(1);" />
-            <img src="/feather/moon.svg" id="moon-icon" />
+            <img src="/feather/sun.svg" id="sun-icon" style="filter: invert(1);" width="16" height="16" />
+            <img src="/feather/moon.svg" id="moon-icon" width="16" height="16" />
         </a>
         <script src="/js/themetoggle.js"></script>
         {% endif %}
