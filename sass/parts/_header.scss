@@ -21,8 +21,14 @@ header {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
   padding: 1em 0;
   font-size: 1.25rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
 }
 
 header .main {
@@ -68,11 +74,17 @@ header .main {
   letter-spacing: -0.5px;
 }
 
+#dark-mode-toggle {
+  display: inline-flex;
+  align-items: center;
+}
+
 #dark-mode-toggle>img {
   display: none;
   width: 16px;
   height: 16px;
   border: unset;
+  vertical-align: middle;
 }
 
 h1,

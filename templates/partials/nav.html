@@ -17,7 +17,7 @@
         {% endfor %}
 
         {% if config.extra.theme == "toggle" %}
-        | <a id="dark-mode-toggle" onclick="toggleTheme()" href="javascript:void(0)">
+        <a id="dark-mode-toggle" onclick="toggleTheme()" href="javascript:void(0)" style="margin-left: 0.7em">
             <img src="/feather/sun.svg" id="sun-icon" style="filter: invert(1);" />
             <img src="/feather/moon.svg" id="moon-icon" />
         </a>
